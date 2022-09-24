@@ -3,10 +3,8 @@ namespace trabalho1ex1poo
 {
     public class VeiculosPasseio : Veiculos
     {
-
-        public int id { get; set; }
         public int quantidadePassageiros { get; set; }
-        public VeiculosPasseio(int id,string cor, string modelo, string placa, string ano, int quantidadePassageiros, string tipo) : base(tipo,cor, modelo, placa, ano)
+        public VeiculosPasseio(int id, string cor, string modelo, string placa, string ano, int quantidadePassageiros, string tipo) : base(tipo, cor, modelo, placa, ano)
         {
             this.id = id;
             this.cor = cor;
@@ -26,7 +24,6 @@ namespace trabalho1ex1poo
         {
             return base.GetVeiculos();
         }
-
 
     }
 }

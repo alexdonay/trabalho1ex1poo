@@ -17,6 +17,6 @@ namespace trabalho1ex1poo
             }
             return _instance;
         }
-       
+
     }
 }

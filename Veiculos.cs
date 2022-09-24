@@ -19,8 +19,9 @@ namespace trabalho1ex1poo
             this.ano = ano;
             this.tipo = tipo;
         }
-        public virtual void addVeiculo() { 
-            
+        public virtual void addVeiculo()
+        {
+
         }
         public virtual List<Veiculos> GetVeiculos()
         {
