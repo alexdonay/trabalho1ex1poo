@@ -33,12 +33,5 @@ namespace trabalho1ex1poo
             }
 
         }
-
-       
-
-        private void GridLeves_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            MessageBox.Show(e.RowIndex.ToString());
-        }
     }
 }

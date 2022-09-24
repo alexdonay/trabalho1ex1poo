@@ -59,7 +59,6 @@
             this.GridLeves.ReadOnly = true;
             this.GridLeves.Size = new System.Drawing.Size(843, 343);
             this.GridLeves.TabIndex = 0;
-            this.GridLeves.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridLeves_CellClick);
             // 
             // Id
             // 
