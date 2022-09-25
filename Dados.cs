@@ -4,7 +4,6 @@ namespace trabalho1ex1poo
 {
     sealed class Dados
     {
-        public static readonly Dados instance = new Dados();
         public List<VeiculosPasseio> passeios = new List<VeiculosPasseio>();
         public List<VeiculosPesados> pesados = new List<VeiculosPesados>();
         private Dados() { }
@@ -17,6 +16,5 @@ namespace trabalho1ex1poo
             }
             return _instance;
         }
-
     }
 }

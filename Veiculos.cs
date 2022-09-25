@@ -19,15 +19,8 @@ namespace trabalho1ex1poo
             this.ano = ano;
             this.tipo = tipo;
         }
-        public virtual void addVeiculo()
-        {
-
-        }
-        public virtual List<Veiculos> GetVeiculos()
-        {
-            return null;
-        }
-
+        //Método a ser sobrescrito nas classes filhas
+        public virtual void addVeiculo(){}
+        public virtual List<Veiculos> GetVeiculos(){return null;}
     }
-
 }

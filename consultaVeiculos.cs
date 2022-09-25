@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace trabalho1ex1poo
@@ -16,22 +10,19 @@ namespace trabalho1ex1poo
         {
             InitializeComponent();
         }
-
         private void consultaPasseio_Load(object sender, EventArgs e)
         {
             Dados dados = Dados.getInstance();
-            
-            List<VeiculosPasseio> passeio = dados.passeios;
-            foreach (VeiculosPasseio veiculo in passeio)
+
+            foreach (VeiculosPasseio veiculo in dados.passeios)
             {
-                GridLeves.Rows.Add(veiculo.id, veiculo.cor, veiculo.modelo, veiculo.placa, veiculo.ano, veiculo.quantidadePassageiros,"", veiculo.tipo);
+                GridLeves.Rows.Add(veiculo.id, veiculo.cor, veiculo.modelo, veiculo.placa, veiculo.ano, veiculo.quantidadePassageiros, "", veiculo.tipo);
             }
             List<VeiculosPesados> pesados = dados.pesados;
             foreach (VeiculosPesados veiculo in pesados)
             {
-                GridLeves.Rows.Add(veiculo.id, veiculo.cor, veiculo.modelo, veiculo.placa, veiculo.ano, "",veiculo.eixos, veiculo.tipo);
+                GridLeves.Rows.Add(veiculo.id, veiculo.cor, veiculo.modelo, veiculo.placa, veiculo.ano, "", veiculo.eixos, veiculo.tipo);
             }
-
         }
     }
 }

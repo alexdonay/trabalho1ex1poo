@@ -44,18 +44,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.gbPessado = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.BtnCadastraPessado = new System.Windows.Forms.Button();
+            this.BtnConsultaPesados = new System.Windows.Forms.Button();
+            this.BtnCadastraPesado = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.TxEixos = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.TxAnoPesado = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.TxPlacaPessado = new System.Windows.Forms.TextBox();
+            this.TxPlacaPesado = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.TxModeloPesado = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.TxCorPessado = new System.Windows.Forms.TextBox();
+            this.TxCorPesado = new System.Windows.Forms.TextBox();
             this.gpBox.SuspendLayout();
             this.gbPessado.SuspendLayout();
             this.SuspendLayout();
@@ -203,43 +203,43 @@
             // 
             // gbPessado
             // 
-            this.gbPessado.Controls.Add(this.button1);
-            this.gbPessado.Controls.Add(this.BtnCadastraPessado);
+            this.gbPessado.Controls.Add(this.BtnConsultaPesados);
+            this.gbPessado.Controls.Add(this.BtnCadastraPesado);
             this.gbPessado.Controls.Add(this.label6);
             this.gbPessado.Controls.Add(this.TxEixos);
             this.gbPessado.Controls.Add(this.label7);
             this.gbPessado.Controls.Add(this.TxAnoPesado);
             this.gbPessado.Controls.Add(this.label8);
-            this.gbPessado.Controls.Add(this.TxPlacaPessado);
+            this.gbPessado.Controls.Add(this.TxPlacaPesado);
             this.gbPessado.Controls.Add(this.label9);
             this.gbPessado.Controls.Add(this.TxModeloPesado);
             this.gbPessado.Controls.Add(this.label10);
-            this.gbPessado.Controls.Add(this.TxCorPessado);
+            this.gbPessado.Controls.Add(this.TxCorPesado);
             this.gbPessado.Location = new System.Drawing.Point(259, 95);
             this.gbPessado.Name = "gbPessado";
             this.gbPessado.Size = new System.Drawing.Size(222, 228);
             this.gbPessado.TabIndex = 17;
             this.gbPessado.TabStop = false;
             // 
-            // button1
+            // BtnConsultaPesados
             // 
-            this.button1.Location = new System.Drawing.Point(124, 177);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Consulta";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BtnConsultaPesados.Location = new System.Drawing.Point(124, 177);
+            this.BtnConsultaPesados.Name = "BtnConsultaPesados";
+            this.BtnConsultaPesados.Size = new System.Drawing.Size(75, 23);
+            this.BtnConsultaPesados.TabIndex = 22;
+            this.BtnConsultaPesados.Text = "Consulta";
+            this.BtnConsultaPesados.UseVisualStyleBackColor = true;
+            this.BtnConsultaPesados.Click += new System.EventHandler(this.button1_Click);
             // 
-            // BtnCadastraPessado
+            // BtnCadastraPesado
             // 
-            this.BtnCadastraPessado.Location = new System.Drawing.Point(6, 177);
-            this.BtnCadastraPessado.Name = "BtnCadastraPessado";
-            this.BtnCadastraPessado.Size = new System.Drawing.Size(75, 23);
-            this.BtnCadastraPessado.TabIndex = 21;
-            this.BtnCadastraPessado.Text = "Cadastrar";
-            this.BtnCadastraPessado.UseVisualStyleBackColor = true;
-            this.BtnCadastraPessado.Click += new System.EventHandler(this.BtnCadastraPessado_Click);
+            this.BtnCadastraPesado.Location = new System.Drawing.Point(6, 177);
+            this.BtnCadastraPesado.Name = "BtnCadastraPesado";
+            this.BtnCadastraPesado.Size = new System.Drawing.Size(75, 23);
+            this.BtnCadastraPesado.TabIndex = 21;
+            this.BtnCadastraPesado.Text = "Cadastrar";
+            this.BtnCadastraPesado.UseVisualStyleBackColor = true;
+            this.BtnCadastraPesado.Click += new System.EventHandler(this.BtnCadastraPessado_Click);
             // 
             // label6
             // 
@@ -282,12 +282,12 @@
             this.label8.TabIndex = 12;
             this.label8.Text = "Placa";
             // 
-            // TxPlacaPessado
+            // TxPlacaPesado
             // 
-            this.TxPlacaPessado.Location = new System.Drawing.Point(99, 72);
-            this.TxPlacaPessado.Name = "TxPlacaPessado";
-            this.TxPlacaPessado.Size = new System.Drawing.Size(100, 20);
-            this.TxPlacaPessado.TabIndex = 11;
+            this.TxPlacaPesado.Location = new System.Drawing.Point(99, 72);
+            this.TxPlacaPesado.Name = "TxPlacaPesado";
+            this.TxPlacaPesado.Size = new System.Drawing.Size(100, 20);
+            this.TxPlacaPesado.TabIndex = 11;
             // 
             // label9
             // 
@@ -314,12 +314,12 @@
             this.label10.TabIndex = 8;
             this.label10.Text = "Cor";
             // 
-            // TxCorPessado
+            // TxCorPesado
             // 
-            this.TxCorPessado.Location = new System.Drawing.Point(99, 16);
-            this.TxCorPessado.Name = "TxCorPessado";
-            this.TxCorPessado.Size = new System.Drawing.Size(100, 20);
-            this.TxCorPessado.TabIndex = 4;
+            this.TxCorPesado.Location = new System.Drawing.Point(99, 16);
+            this.TxCorPesado.Name = "TxCorPesado";
+            this.TxCorPesado.Size = new System.Drawing.Size(100, 20);
+            this.TxCorPesado.TabIndex = 4;
             // 
             // Form1
             // 
@@ -363,15 +363,15 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox TxAnoPesado;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox TxPlacaPessado;
+        private System.Windows.Forms.TextBox TxPlacaPesado;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox TxModeloPesado;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox TxCorPessado;
+        private System.Windows.Forms.TextBox TxCorPesado;
         private System.Windows.Forms.Button BtConsultaPasseio;
         private System.Windows.Forms.Button BtCadastraPasseio;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button BtnCadastraPessado;
+        private System.Windows.Forms.Button BtnConsultaPesados;
+        private System.Windows.Forms.Button BtnCadastraPesado;
     }
 }
 

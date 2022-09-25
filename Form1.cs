@@ -70,7 +70,7 @@ namespace trabalho1ex1poo
 
         private void BtnCadastraPessado_Click(object sender, EventArgs e)
         {
-            if (TxCorPessado.Text == "" || TxAnoPesado.Text == "" || TxPlacaPessado.Text == "" || TxModeloPesado.Text == "" || int.Parse(TxEixos.Text) == 0)
+            if (TxCorPesado.Text == "" || TxAnoPesado.Text == "" || TxPlacaPesado.Text == "" || TxModeloPesado.Text == "" || int.Parse(TxEixos.Text) == 0)
             {
                 MessageBox.Show("Dados Incompletos");
 
@@ -81,12 +81,12 @@ namespace trabalho1ex1poo
                 {
                     Dados dados = Dados.getInstance();
                     int id = dados.pesados.Count;
-                    VeiculosPesados pesados = new VeiculosPesados(id, TxCorPessado.Text, TxModeloPesado.Text, TxPlacaPessado.Text, TxAnoPesado.Text, int.Parse(TxEixos.Text), "Pesado");
+                    VeiculosPesados pesados = new VeiculosPesados(id, TxCorPesado.Text, TxModeloPesado.Text, TxPlacaPesado.Text, TxAnoPesado.Text, int.Parse(TxEixos.Text), "Pesado");
                     pesados.addVeiculo();
                     MessageBox.Show("Veiculo cadastrado Com Sucesso");
-                    TxCorPessado.Text = "";
+                    TxCorPesado.Text = "";
                     TxModeloPesado.Text = "";
-                    TxPlacaPessado.Text = "";
+                    TxPlacaPesado.Text = "";
                     TxAnoPesado.Text = "";
                     TxEixos.Text = "";
                 }
