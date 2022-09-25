@@ -82,11 +82,11 @@
             // 
             // BtConsultaPasseio
             // 
-            this.BtConsultaPasseio.Location = new System.Drawing.Point(124, 179);
+            this.BtConsultaPasseio.Location = new System.Drawing.Point(99, 179);
             this.BtConsultaPasseio.Name = "BtConsultaPasseio";
-            this.BtConsultaPasseio.Size = new System.Drawing.Size(75, 23);
+            this.BtConsultaPasseio.Size = new System.Drawing.Size(100, 23);
             this.BtConsultaPasseio.TabIndex = 20;
-            this.BtConsultaPasseio.Text = "Consulta";
+            this.BtConsultaPasseio.Text = "Consulta/Calcula";
             this.BtConsultaPasseio.UseVisualStyleBackColor = true;
             this.BtConsultaPasseio.Click += new System.EventHandler(this.BtConsultaPasseio_Click);
             // 
@@ -223,11 +223,11 @@
             // 
             // BtnConsultaPesados
             // 
-            this.BtnConsultaPesados.Location = new System.Drawing.Point(124, 177);
+            this.BtnConsultaPesados.Location = new System.Drawing.Point(99, 177);
             this.BtnConsultaPesados.Name = "BtnConsultaPesados";
-            this.BtnConsultaPesados.Size = new System.Drawing.Size(75, 23);
+            this.BtnConsultaPesados.Size = new System.Drawing.Size(117, 23);
             this.BtnConsultaPesados.TabIndex = 22;
-            this.BtnConsultaPesados.Text = "Consulta";
+            this.BtnConsultaPesados.Text = "Consulta/Calcula";
             this.BtnConsultaPesados.UseVisualStyleBackColor = true;
             this.BtnConsultaPesados.Click += new System.EventHandler(this.button1_Click);
             // 

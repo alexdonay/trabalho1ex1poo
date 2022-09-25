@@ -37,6 +37,14 @@
             this.Passageiros = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Eixos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TxtIDVeiculo = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.TxtTipo = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.TxtPedagio = new System.Windows.Forms.TextBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.GridLeves)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,6 +67,7 @@
             this.GridLeves.ReadOnly = true;
             this.GridLeves.Size = new System.Drawing.Size(843, 343);
             this.GridLeves.TabIndex = 0;
+            this.GridLeves.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridLeves_CellClick);
             // 
             // Id
             // 
@@ -108,17 +117,91 @@
             this.Tipo.Name = "Tipo";
             this.Tipo.ReadOnly = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(882, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Calcula Pedágio";
+            // 
+            // TxtIDVeiculo
+            // 
+            this.TxtIDVeiculo.Location = new System.Drawing.Point(924, 72);
+            this.TxtIDVeiculo.Name = "TxtIDVeiculo";
+            this.TxtIDVeiculo.Size = new System.Drawing.Size(100, 20);
+            this.TxtIDVeiculo.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(861, 79);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(18, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "ID";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(861, 105);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(28, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Tipo";
+            // 
+            // TxtTipo
+            // 
+            this.TxtTipo.Location = new System.Drawing.Point(924, 98);
+            this.TxtTipo.Name = "TxtTipo";
+            this.TxtTipo.Size = new System.Drawing.Size(100, 20);
+            this.TxtTipo.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(861, 131);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(46, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Pedagio";
+            // 
+            // TxtPedagio
+            // 
+            this.TxtPedagio.Location = new System.Drawing.Point(924, 124);
+            this.TxtPedagio.Name = "TxtPedagio";
+            this.TxtPedagio.Size = new System.Drawing.Size(100, 20);
+            this.TxtPedagio.TabIndex = 6;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(867, 185);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(156, 109);
+            this.richTextBox1.TabIndex = 8;
+            this.richTextBox1.Text = "Ao clicar no grid ao lado o sistema calcula o pedágio do veículo.";
+            // 
             // consultaVeiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(857, 356);
+            this.ClientSize = new System.Drawing.Size(1038, 356);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.TxtPedagio);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.TxtTipo);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.TxtIDVeiculo);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.GridLeves);
             this.Name = "consultaVeiculos";
             this.Text = "Consulta Veiculos";
             this.Load += new System.EventHandler(this.consultaPasseio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridLeves)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -133,5 +216,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Passageiros;
         private System.Windows.Forms.DataGridViewTextBoxColumn Eixos;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox TxtIDVeiculo;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox TxtTipo;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox TxtPedagio;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

@@ -25,5 +25,11 @@ namespace trabalho1ex1poo
         {
             return base.GetVeiculos();
         }
+        public override double calculaPedagio()
+        {
+
+            return this.eixos * 3.40;
+
+        }
     }
 }

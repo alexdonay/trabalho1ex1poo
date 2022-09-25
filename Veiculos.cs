@@ -22,5 +22,6 @@ namespace trabalho1ex1poo
         //Método a ser sobrescrito nas classes filhas
         public virtual void addVeiculo(){}
         public virtual List<Veiculos> GetVeiculos(){return null;}
+        public virtual double calculaPedagio() { return 0;}
     }
 }

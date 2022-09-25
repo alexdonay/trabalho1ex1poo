@@ -14,6 +14,7 @@ namespace trabalho1ex1poo
             this.quantidadePassageiros = quantidadePassageiros;
             this.tipo = tipo;
         }
+      
         public override void addVeiculo()
         {
             //sobrescrevendo o metodo addVeiculo() da classe pais, conforme pedido no exercicio
@@ -23,6 +24,10 @@ namespace trabalho1ex1poo
         public override List<Veiculos> GetVeiculos()
         {
             return base.GetVeiculos();
+        }
+        public override double calculaPedagio()
+        {
+            return 6.50;
         }
     }
 }
